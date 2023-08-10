@@ -1,9 +1,12 @@
-<script setup lang="ts">
-</script>
-
 <template>
-<h1>Hello World</h1>
+  <Header/>
+  <router-view/>
+  <footer></footer>
 </template>
+
+<script setup lang="ts">
+import Header from './global/Header/HeaderApp.vue'
+</script>
 
 <style scoped>
 
