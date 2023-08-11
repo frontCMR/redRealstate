@@ -1,8 +1,10 @@
 <template lang="">
-    <h1>HomeView</h1>
+    <HeroHome />
+    <ServicesHome />
 </template>
 <script lang="ts" setup>
-
+    import HeroHome from './components/HeroHome.vue'
+    import ServicesHome from './components/ServicesHome.vue'
 </script>
 <style lang="">
     
