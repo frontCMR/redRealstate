@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <section class="p-4">
     <article class="flex flex-col items-center">
       <figure>

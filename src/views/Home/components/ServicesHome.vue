@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <section class="w-full p-4 flex flex-wrap gap-4 justify-center">
     <h2 class="sectionTitle">CONOCE NUESTROS SERVICIOS</h2>
     <div class="w-full p-4 flex flex-wrap gap-4 justify-center">

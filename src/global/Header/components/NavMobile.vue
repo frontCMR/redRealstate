@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <nav
     class="fixed z-10 top-0 w-full flex justify-between items-center p-3 bg-white shadow-md"
   >
@@ -44,7 +44,7 @@
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-import { Bars3Icon, UserCircleIcon } from "@heroicons/vue/24/solid";
+import { Bars3Icon } from "@heroicons/vue/24/solid";
 
 const isNavMobile = ref(false);
 

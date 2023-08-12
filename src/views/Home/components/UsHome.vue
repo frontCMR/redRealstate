@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <section class="p-4">
     <h2 class="sectionTitle">Nuestra Empresa</h2>
     <article class="my-6">

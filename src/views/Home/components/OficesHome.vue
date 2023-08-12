@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <section>
     <h2 class="sectionTitle">Nuestras Oficinas en Colombia</h2>
     <article class="flex flex-col gap-6 items-center mt-5">
