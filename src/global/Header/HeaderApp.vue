@@ -1,13 +1,13 @@
 <template lang="">
-    <NavMobile/>
-    <NavDesktop/>
+  <header>
+    <NavMobile />
+    <NavDesktop />
+  </header>
 </template>
 
-<script lang="ts" setup>
-    import NavMobile from './components/NavMobile.vue'
-    import NavDesktop from './components/NavDesktop.vue'
+<script setup lang="ts">
+import NavMobile from "./components/NavMobile.vue";
+import NavDesktop from "./components/NavDesktop.vue";
 </script>
 
-<style lang="">
-    
-</style>
+<style lang=""></style>
