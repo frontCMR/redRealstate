@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primaryColor: "#930B0B",
-        footerBg: "#333E44",
+        footerBg: "#282828",
         grayMenu: "#373E44",
       },
       fontFamily: {

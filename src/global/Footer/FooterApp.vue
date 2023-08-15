@@ -1,26 +1,26 @@
-<template lang="">
+<template>
   <footer class="w-full bg-footerBg">
     <section
-      class="flex flex-col items-center gap-6 w-full p-4 text-center text-white"
+      class="flex flex-col gap-6 w-full p-6 text-white"
     >
-      <h3 class="footerTitle">Ponerse en contacto</h3>
-      <h3 class="footerTitle">Tel: 3333000</h3>
-      <h3 class="footerTitle">Cel: +57 324 4047878</h3>
-      <h3 class="footerTitle">Oficinas</h3>
-      <article class="flex flex-col gap-3">
-        <h3 class="footerTitle">Cali</h3>
-        <p>Calle 5 No. 85 – 29 Barrio Las vegas Cali –</p>
-        <p>
-          Cel: (+57) 3166183100 PBX: (+572) 3333000Cel: (+57) 3166183100 PBX:
-          (+572) 3333000
-        </p>
+      <article class="flex flex-col gap-4">
+        <div>
+          <h3 class="footerTitle">Cali</h3>
+          <p>Calle 5 No. 85 - 29 - Barrio las Vegas (Cali)</p>
+        </div>
+        <div>
+          <h3 class="footerTitle">Contacto</h3>
+          <h3>Telefono: 3333000</h3>
+          <h3>Celular: +57 324 4047878</h3>
+        </div>
+        <p><span class="font-bold">Email:</span> contacto@red-realestate.com</p>
+        <div class="flex items-center gap-4">
+          <a v-for="item in socialMedia" :key="item.link" :href="item.link" target="_blank">
+            <img :src="item.icon" alt="">
+          </a>
+          <!-- <img src="./assets/icons/iconFacebook.png" alt=""> -->
+        </div>
       </article>
-      <article class="flex flex-col gap-3">
-        <h3 class="footerTitle">Email</h3>
-        <p>contacto@red-realestate.com</p>
-      </article>
-    </section>
-    <section class="bg-primaryColor p-6 text-center">
       <figure class="mx-auto">
         <img
           class="mx-auto"
@@ -31,9 +31,38 @@
     </section>
   </footer>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import {ref, Ref} from 'vue'
+  interface SocialMedia {
+    link: string
+    icon: string
+  }
+  const socialMedia: Ref<SocialMedia[]> = ref([
+    {
+      link: 'https://www.instagram.com/redrealstate/',
+      icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconInstagram_t9tm78.png',
+    },
+    {
+      link: 'https://www.facebook.com/redrealstate/',
+      icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconFacebook_yfw5ig.png',
+    },
+    {
+      link: 'linkedIn',
+      icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconLinkedIn_byu1tq.png',
+    },
+    {
+      link: 'whatsapp:+57 324 4047878',
+      icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconWhatsapp_wgmbqo.png',
+    },
+    {
+      link: 'youtube',
+      icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconYoutube_iuth71.png',
+    },
+  ])
+
+</script>
 <style lang="css">
 .footerTitle {
-  @apply text-2xl font-bold text-center;
+  @apply text-2xl font-semibold;
 }
 </style>
