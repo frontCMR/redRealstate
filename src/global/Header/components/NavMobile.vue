@@ -2,13 +2,13 @@
   <nav
     class="fixed z-10 top-0 w-full flex justify-between items-center p-3 bg-white shadow-md lg:hidden"
   >
-    <figure class="w-16">
-      <img
-        class="w-full h-full object-contain"
-        src="https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redMain_a93d9u.svg"
-        alt=""
-      />
-    </figure>
+  <router-link  to="/">
+        <img
+          class="w-20 h-full object-contain"
+          src="https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redMain_a93d9u.svg"
+          alt=""
+        />
+      </router-link>
     <article class="flex items-center gap-4">
       <!-- <UserCircleIcon class="w-8 h-8 text-red-500" /> -->
       <div

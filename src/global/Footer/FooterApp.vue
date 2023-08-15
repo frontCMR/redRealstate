@@ -39,11 +39,11 @@
   }
   const socialMedia: Ref<SocialMedia[]> = ref([
     {
-      link: 'https://www.instagram.com/redrealstate/',
+      link: 'https://www.instagram.com/red_realestatedigital/',
       icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconInstagram_t9tm78.png',
     },
     {
-      link: 'https://www.facebook.com/redrealstate/',
+      link: 'https://www.facebook.com/red.realestate2023/',
       icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconFacebook_yfw5ig.png',
     },
     {
@@ -51,11 +51,11 @@
       icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconLinkedIn_byu1tq.png',
     },
     {
-      link: 'whatsapp:+57 324 4047878',
+      link: `https://wa.me/+573244047878`,
       icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconWhatsapp_wgmbqo.png',
     },
     {
-      link: 'youtube',
+      link: 'https://www.youtube.com/channel/UC0hJEfhcWzbtSJeeJjYHmMw',
       icon: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconYoutube_iuth71.png',
     },
   ])

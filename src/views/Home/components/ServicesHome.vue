@@ -56,12 +56,12 @@ const services: Ref<Services[]> = ref([
   },
   {
     name: "Red Patners",
-    link: '#',
+    link: 'http://redpartners.red-realestate.com/',
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redPatners_o39apm.svg",
   },
   {
     name: "Red Money",
-    link: '#',
+    link: 'https://myredmoney.com/',
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redMoney_fgf4lv.svg",
   },
 ]);
