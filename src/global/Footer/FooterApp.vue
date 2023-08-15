@@ -1,7 +1,7 @@
 <template>
-  <footer class="w-full bg-footerBg">
+  <footer class=" bg-footerBg">
     <section
-      class="flex flex-col gap-6 w-full p-6 text-white md:flex-row md:items-center md:justify-between"
+      class="flex flex-col gap-6 max-w-screen-xl mx-auto p-6 text-white md:flex-row md:items-center md:justify-between"
     >
       <article class="flex flex-col gap-4">
         <div>

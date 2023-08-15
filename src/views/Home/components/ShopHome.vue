@@ -1,25 +1,30 @@
 <template>
-  <section class="relative h-80">
-    <figure class="w-full h-full">
-      <img
-        class="w-full h-full object-cover"
-        src="https://res.cloudinary.com/dumnq4c3n/image/upload/v1692069331/tiendaBg_tn1nlp.png"
-        alt=""
-      />
-    </figure>
-    <article class="absolute top-0 left-0 w-full h-full bg-black/30">
+  <section class="relative transition-all h-[430px] lg:h-[476px] shopHome">
+    <article class="absolute top-0 left-0 w-full h-full bg-black/80 lg:w-1/2">
       <div
-        class="flex flex-col gap-6 items-center justify-center h-full text-white p-4"
+        class="flex flex-col gap-6 items-center justify-center h-full text-white p-4 lg:p-10 transition-all"
       >
-        <h2 class="sectionTitle">Descubre nuestra tienda</h2>
-        <button
-          class="p-4 px-9 text-white font-semibold text-xl transition-all shadow-lg bg-[#94120B]"
-        >
+        <h2 class="text-3xl font-semibold text-center lg:self-start lg:text-5xl lg:text-start z-[1]">Descubre nuestra tienda</h2>
+        <button class="btnShop" @click="goToShop">
           Entra ahora
         </button>
       </div>
     </article>
+    <div class="absolute top-0 left-0 w-full h-full blurredTopConection"></div>
+    <!-- <div class="absolute top-0 left-0 w-full h-full blurredBottomConection"></div> -->
   </section>
 </template>
-<script lang="ts" setup></script>
-<style lang=""></style>
+<script lang="ts" setup>
+  const goToShop = () => {
+    window.location.href = 'https://tienda.kwred.co/'
+  }
+</script>
+<style lang="css" scoped>
+  .shopHome{
+    background: url('../assets/shop.jpg') no-repeat center/cover;
+  }
+  .btnShop{
+    @apply p-4 px-9 text-white font-semibold text-xl shadow-lg bg-[#94120B] lg:self-start lg:w-3/5 transition-all;
+    @apply cursor-pointer z-[1];
+  }
+</style>

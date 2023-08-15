@@ -14,6 +14,32 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  background-color: #282828;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #930B0B;
+}
+
+
 .sectionTitle {
-  @apply text-3xl font-bold text-center;
+  @apply text-3xl font-semibold text-center;
+}
+.blurred{
+  background: linear-gradient(to top, white, transparent 20%);
+}
+.blurredTop{
+  background: linear-gradient(to bottom, white, transparent 20%);
+}
+.blurredTopConection {
+  background: linear-gradient(to bottom, white, transparent 11%);
+}
+.blurredBottomConection {
+  background: linear-gradient(to top, white, transparent 11%);
 }
