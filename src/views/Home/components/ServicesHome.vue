@@ -1,9 +1,9 @@
 <template>
   <section class="w-full p-4 flex flex-wrap gap-4 justify-center">
-    <h2 class="sectionTitle">CONOCE NUESTROS SERVICIOS</h2>
+    <h2 class="sectionTitle">Descubre Nuestro Universo Digital</h2>
     <div class="w-full p-4 flex flex-wrap gap-4 justify-center">
       <article
-        class="p-4 border border-black rounded-3xl w-32 h-24"
+        class="serviceItem"
         v-for="service in services"
         :key="service.name"
       >
@@ -56,4 +56,9 @@ const services: Ref<Services[]> = ref([
   },
 ]);
 </script>
-<style lang=""></style>
+<style lang="css">
+.serviceItem {
+  @apply cursor-pointer p-4 rounded-lg w-36 h-36;
+  @apply transition-all hover:shadow-sm hover:shadow-red-600 hover:scale-105;
+}
+</style>

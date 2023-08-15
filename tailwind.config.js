@@ -8,6 +8,9 @@ export default {
         footerBg: "#333E44",
         grayMenu: "#373E44",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
