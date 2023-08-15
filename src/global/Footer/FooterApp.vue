@@ -1,7 +1,7 @@
 <template>
   <footer class="w-full bg-footerBg">
     <section
-      class="flex flex-col gap-6 w-full p-6 text-white"
+      class="flex flex-col gap-6 w-full p-6 text-white md:flex-row md:items-center md:justify-between"
     >
       <article class="flex flex-col gap-4">
         <div>
@@ -21,7 +21,7 @@
           <!-- <img src="./assets/icons/iconFacebook.png" alt=""> -->
         </div>
       </article>
-      <figure class="mx-auto">
+      <figure class="mx-auto transition-all md:mx-0">
         <img
           class="mx-auto"
           src="https://res.cloudinary.com/dumnq4c3n/image/upload/v1691858900/whiteLogo_qreaze.png"
