@@ -28,7 +28,7 @@
     </ul>
     <article class="flex flex-col gap-4 items-center mt-10 md:flex-row md:justify-center lg:gap-10">
       <div v-for="item in ourInfo" :key="item.title">
-        <a v-if="item.to.includes('https://')" :href="item.to" target="_blank" class="flex flex-col items-center gap-3">
+        <a v-if="item.to.includes('https://')" :href="item.to" target="_blank" class="flex flex-col items-center gap-3 transition-all hover:scale-105">
           <figure class="w-56 h-52">
             <img
             :src="item.imgUrl"
@@ -37,7 +37,7 @@
           </figure>
           <h3 class="text-xl font-semibold">{{item.title}}</h3>
         </a>
-        <router-link v-else :to="item.to" class="flex flex-col items-center gap-3">
+        <router-link v-else :to="item.to" class="flex flex-col items-center gap-3 transition-all hover:scale-105">
           <figure class="w-56 h-52">
             <img
             :src="item.imgUrl"

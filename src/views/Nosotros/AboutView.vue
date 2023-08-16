@@ -14,6 +14,10 @@
   </main>
 </template>
 <script lang="ts" setup>
+import { onMounted } from "vue";
 import UsAbout from "./components/UsAbout.vue";
+onMounted(() => {
+  window.scrollTo(0, 0);
+})
 </script>
 <style lang="css"></style>

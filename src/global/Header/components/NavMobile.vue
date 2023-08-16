@@ -31,7 +31,11 @@
         <ul class="flex flex-col gap-3 pb-4">
           <li><a href="https://redfincaraiz.com/agents" target="_blank">Agentes</a></li>
           <li><a href="https://redfincaraiz.com" target="_blank">Inmuebles</a></li>
-          <li class="cursor-pointer" @click="downoadPdf">Oportunidad</li>
+          <li class="cursor-pointer">
+            <router-link :to="{ name: 'oportunidad' }">
+              Oportunidad
+            </router-link>
+          </li>
           <li>Productos y servicios</li>
           <li><a href="https://kwred.co/blog/" target="_blank">Blogs</a></li>
           <li><a href="https://www.red-realestate.com/customer" target="_blank">Inicia sesión</a></li>
@@ -51,15 +55,15 @@ const toggleMenuMobile = (): void => {
   console.log("entro");
   isNavMobile.value = !isNavMobile.value;
 };
-const downoadPdf = () => {
-    const link = document.createElement("a");
-    link.href = '../../public/oportunidad.pdf';
-    link.target = '_blank'
-    link.download = 'Oportunidad.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+// const downoadPdf = () => {
+//     const link = document.createElement("a");
+//     link.href = '../../public/oportunidad.pdf';
+//     link.target = '_blank'
+//     link.download = 'Oportunidad.pdf';
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// }
 </script>
 <style lang="css">
 .mMobileBack {

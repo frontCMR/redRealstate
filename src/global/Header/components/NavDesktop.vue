@@ -11,7 +11,11 @@
       <ul class="flex gap-6 font-medium">
         <li><a href="https://redfincaraiz.com/agents" target="_blank">Agentes</a></li>
         <li><a href="https://redfincaraiz.com" target="_blank">Inmuebles</a></li>
-        <li class="cursor-pointer" @click="downoadPdf">Oportunidad</li>
+        <li class="cursor-pointer">
+          <router-link :to="{ name: 'oportunidad' }">
+            Oportunidad
+          </router-link>
+        </li>
         <li>
           <router-link :to="{ name: 'productosServicios' }">
             Productos y servicios
@@ -24,14 +28,14 @@
   </section>
 </template>
 <script lang="ts" setup>
-  const downoadPdf = () => {
-    const link = document.createElement("a");
-    link.href = '../../public/oportunidad.pdf';
-    link.target = '_blank'
-    link.download = 'Oportunidad.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+  // const downoadPdf = () => {
+  //   const link = document.createElement("a");
+  //   link.href = '../../public/oportunidad.pdf';
+  //   link.target = '_blank'
+  //   link.download = 'Oportunidad.pdf';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // }
 </script>
 <style lang=""></style>

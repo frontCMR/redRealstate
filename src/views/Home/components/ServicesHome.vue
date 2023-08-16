@@ -16,6 +16,7 @@
             :alt="service.name"
           />
         </figure>
+        <p v-if="service.name === 'Red Projects' || service.name === 'Red Travel'" class="proxP">Próximamente</p>
       </a>
     </div>
   </section>
@@ -31,7 +32,7 @@ interface Services {
 const services: Ref<Services[]> = ref([
   {
     name: "Red Academy",
-    link: '#',
+    link: 'http://academy.red-realestate.com/',
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redAcademy_j2b9vy.svg",
   },
   {
@@ -40,19 +41,9 @@ const services: Ref<Services[]> = ref([
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redCrm_ynpl3f.svg",
   },
   {
-    name: "Red Projects",
-    link: '#',
-    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redProjects_rswjft.svg",
-  },
-  {
     name: "Red Fincaraiz",
     link: 'https://redfincaraiz.com/',
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692137437/LOGO-RED-FINCA-RAIZ_1_jnr9sx.png",
-  },
-  {
-    name: "Red Travel",
-    link: '#',
-    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692109632/RedTravel_slmazf.png",
   },
   {
     name: "Red Patners",
@@ -64,11 +55,24 @@ const services: Ref<Services[]> = ref([
     link: 'https://myredmoney.com/',
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redMoney_fgf4lv.svg",
   },
+  {
+    name: "Red Projects",
+    link: '#',
+    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redProjects_rswjft.svg",
+  },
+  {
+    name: "Red Travel",
+    link: '#',
+    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692109632/RedTravel_slmazf.png",
+  },
 ]);
 </script>
 <style lang="css" scoped>
 .serviceItem {
-  @apply cursor-pointer p-4 rounded-lg w-36 h-36;
+  @apply flex flex-col items-center justify-center cursor-pointer p-4 rounded-lg w-36 h-36;
   @apply transition-all hover:shadow-sm hover:shadow-red-600 hover:scale-105;
+}
+.proxP {
+  @apply text-primaryColor font-semibold animate-pulse;
 }
 </style>

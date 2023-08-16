@@ -5,13 +5,16 @@
         <h2 class="sectionTitle">Contáctanos</h2>
         <p class="text-center mt-2">Resolveremos tus dudas</p>
       </div>
-      <form class="flex flex-col">
-        <div class="flex flex-col items-center gap-5 mt-6 lg:flex-row lg:h-28 lg:items-center lg:gap-0 flex-wrap">
+      <form class="flex flex-col" @submit.prevent="sendEmail">
+        <div class="flex flex-col items-center gap-5 mt-6 lg:flex-row  lg:items-center lg:gap-0 flex-wrap">
             <div class="flex flex-col items-center gap-5 w-full lg:w-1/2">
-              <input class="inputContact" type="text" placeholder="Nombre" v-model="emailData.name" />
-              <input class="inputContact" type="text" placeholder="Correo" v-model="emailData.email"/>
+              <input class="inputContact" required type="text" placeholder="Nombre" v-model="emailData.name" />
+              <input class="inputContact" required type="text" placeholder="Correo" v-model="emailData.email"/>
+              <input class="inputContact" required type="number" placeholder="Telefono" v-model="emailData.phone"/>
+              <input class="inputContact" required type="text" placeholder="Pais" v-model="emailData.country"/>
             </div>
             <textarea
+            required
             class="textAreaContact"
             name=""
             id=""
@@ -32,13 +35,28 @@ import { ref, Ref } from "vue";
   interface EmailData {
     name: string;
     email: string;
+    phone: string;
+    country: string;
     message: string;
   }
   const emailData: Ref<EmailData> = ref({
     name: "",
     email: "",
+    phone: "",
+    country: "",
     message: "",
   })
+  const sendEmail = () => {
+    const subject = "Correo desde la pagina Red RealEstate"
+    const body = `Nombre: ${emailData.value.name} \n 
+    Correo: ${emailData.value.email} \n 
+    Telefono: ${emailData.value.phone} \n 
+    Pais: ${emailData.value.country} \n 
+    Mensaje: ${emailData.value.message}`
+    // const mailtoLink = `mailto:cesar.giraldo@red-realestate.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:bhc1223@hotmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink
+  }
 </script>
 <style lang="css">
 .inputContact {

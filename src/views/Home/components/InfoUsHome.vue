@@ -4,13 +4,13 @@
       <div
         class="flex flex-col gap-6 items-center justify-center h-full text-white p-4"
       >
-        <h2 class="sectionTitle lg:self-start">Conoce más sobre nosotros</h2>
-        <p>
-          <span class="font-bold"> RED Real Estate Digital </span>
-          surge de la visión de Empresarios e Inversionistas comprometidos en
-          transformar la industria Inmobiliaria. Nuestra meta es potenciar a los
-          agentes de bienes raíces a nivel global, capacitándolos como
-          auténticos empresarios.
+        <h2 class="sectionTitle lg:self-start">NUESTRO PROPOSITO</h2>
+        <p class="text-justify">
+          <span class="font-bold">RED </span>
+          nace de la visión de una comunidad de emprendedores 
+          comprometidos en transformar la industria inmobiliaria y digital. 
+          Nuestra meta es potenciar cada uno de nuestros asociados a través 
+          de la tecnología y la educación, ayudándoles a construir libertad empresarial y financiera.
         </p>
         <button class="btnMoreUse" @click="goToMoreUs">
           Descubre más

@@ -3,6 +3,7 @@ import HomeView from '../views/Home/HomeView.vue'
 import AboutView from '../views/Nosotros/AboutView.vue'
 import ProductsView from '../views/ProductosServicios/ProductsView.vue'
 import EventsView from '../views/Eventos/EventsView.vue'
+import OportunityView from '../views/Oportunidad/OportunityView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/eventos',
     name: 'eventos',
     component: EventsView
+  },
+  {
+    path: '/oportunidad',
+    name: 'oportunidad',
+    component: OportunityView
   },
 ]
 
