@@ -1,20 +1,22 @@
 <template>
   <main class="pb-10 pt-[61px]">
-    <h2 class="text-3xl font-semibold my-6 max-w-screen-xl mx-auto">
+    <h2 class="px-4 text-3xl font-semibold my-6 max-w-screen-xl mx-auto">
       Nuestros servicios
     </h2>
-    <section
-      class="max-w-screen-xl mt-5 mb-10 mx-auto rounded-lg overflow-hidden"
-    >
-      <video
-        class="w-full min-h-full min-w-full object-fill"
-        src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692735841/videoCompress_kfqwtq.mp4"
-        controls
+    <section class="px-4">
+      <article
+        class="max-w-screen-xl mt-5 mb-10 mx-auto rounded-lg overflow-hidden"
       >
-        <source />
-      </video>
+        <video
+          class="w-full min-h-full min-w-full object-fill"
+          src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692735841/videoCompress_kfqwtq.mp4"
+          controls
+        >
+          <source />
+        </video>
+      </article>
     </section>
-    <section class="flex flex-col items-center gap-10 mx-auto">
+    <section class="flex flex-col items-center justify-center gap-10 mx-auto">
       <article v-for="service in services" class="projectItem">
         <div class="pathShadow"></div>
         <div class="artProjectItem">
@@ -117,20 +119,21 @@ onMounted(() => {
 </script>
 <style lang="css" scoped>
 .projectItem {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  height: 314px;
+  @apply relative flex flex-col transition-all;
+  @apply lg:flex-row justify-between lg:h-80;
 }
 .projectItem:nth-child(2n) {
-  flex-direction: row-reverse;
+  @apply lg:flex-row-reverse
+  /* flex-direction: row-reverse; */;
 }
 .artProjectItem {
-  @apply bg-primaryColor;
-  position: relative;
-  width: 50%;
-  padding: 20px;
-  z-index: 2;
+  @apply relative z-[2] bg-primaryColor transition-all h-52;
+  @apply lg:w-1/2 lg:h-80;
+  background-image: radial-gradient(
+    circle at center,
+    #930b0b 64%,
+    #470000 100%
+  );
   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
@@ -139,42 +142,59 @@ onMounted(() => {
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .pathShadow {
-  @apply bg-primaryColor opacity-10;
+  @apply bg-primaryColor opacity-10 transition-all;
   position: absolute;
-  width: 51%;
-  height: 105%;
+  width: 102%;
+  height: 44%;
   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  background-image: radial-gradient(
+    circle at center,
+    #930b0b 64%,
+    #470000 100%
+  );
 }
 .projectItem:nth-child(2n) .pathShadow {
-  width: 52%;
+  width: 80%;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .artProjectItem img {
   position: absolute;
-  top: calc(50% - 160px);
-  left: calc(50% - 237px);
-  width: 474px;
-  height: 320px;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 201px;
   object-fit: contain;
 }
 .infoProjectItem {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  /* padding-inline: 40px; */
-  padding-right: 60px;
-  text-align: justify;
-  z-index: 2;
+  @apply flex flex-col gap-3 p-5 text-justify z-[2];
+  @apply lg:w-1/2 lg:pr-16;
+  /* width: 50%; */
+  /* padding-right: 60px; */
 }
 .projectItem:nth-child(2n) .infoProjectItem {
-  padding-left: 60px;
+  @apply lg:pl-16;
+  /* padding-left: 60px; */
 }
 .btnVisit {
   @apply py-3 px-4 text-white font-semibold text-base shadow-lg bg-[#94120B] lg:self-start transition-all;
   @apply cursor-pointer z-[1] my-5 rounded-lg;
+}
+
+@media screen and (min-width: 1024px) {
+  .artProjectItem img {
+    top: calc(50% - 132px);
+    left: calc(50% - 205px);
+    width: 410px;
+    height: 264px;
+  }
+  .pathShadow {
+    width: 51%;
+    height: 105%;
+  }
+  .projectItem:nth-child(2n) .pathShadow {
+    width: 52%;
+  }
 }
 </style>

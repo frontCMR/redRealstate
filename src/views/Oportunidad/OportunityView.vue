@@ -76,7 +76,7 @@ const downoadPdf = () => {
 }
 .presentation {
   @apply w-full h-[300px] md:h-[500px] lg:h-[749px]  mx-auto transition-all;
-  background-color: aquamarine;
+  background-color: gray;
 }
 .btnDownload {
   @apply p-4 px-9 text-white font-semibold text-lg shadow-lg bg-[#94120B] lg:self-start transition-all;
