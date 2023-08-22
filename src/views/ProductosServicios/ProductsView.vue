@@ -1,8 +1,22 @@
 <template>
-  <main class="max-w-screen-xl mx-auto py-4 mt-[61px]">
-    <h2 class="text-3xl font-semibold my-4">Nuestros servicios</h2>
-    <section class="flex flex-col items-center gap-4 mx-auto">
+  <main class="pb-10 pt-[61px]">
+    <h2 class="text-3xl font-semibold my-6 max-w-screen-xl mx-auto">
+      Nuestros servicios
+    </h2>
+    <section
+      class="max-w-screen-xl mt-5 mb-10 mx-auto rounded-lg overflow-hidden"
+    >
+      <video
+        class="w-full min-h-full min-w-full object-fill"
+        src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692735841/videoCompress_kfqwtq.mp4"
+        controls
+      >
+        <source />
+      </video>
+    </section>
+    <section class="flex flex-col items-center gap-10 mx-auto">
       <article v-for="service in services" class="projectItem">
+        <div class="pathShadow"></div>
         <div class="artProjectItem">
           <img :src="service.img" :alt="service.name" />
         </div>
@@ -35,7 +49,7 @@ const services: Ref<Services[]> = ref([
       están cambiando la vida de miles de emprendedores a nivel nacional e internacional
       `,
     link: "http://academy.red-realestate.com/",
-    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redAcademy_j2b9vy.svg",
+    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740058/RED_ACADEMY_LOGO_1_copia_sa6x8u.png",
   },
   {
     name: "CRM RED",
@@ -46,7 +60,7 @@ const services: Ref<Services[]> = ref([
       página web y ten mayor visibilidad en el mercado.
       `,
     link: "http://www.crmred.co/inicio",
-    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redCrm_ynpl3f.svg",
+    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740057/CRM_BLANCO_copia_ucy19d.png",
   },
   {
     name: "Red Fincaraiz",
@@ -57,7 +71,7 @@ const services: Ref<Services[]> = ref([
       alcanzar objetivos financieros y de bienestar, creando un impacto positivo y duradero en la industria y la sociedad.
       `,
     link: "https://redfincaraiz.com/",
-    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692137437/LOGO-RED-FINCA-RAIZ_1_jnr9sx.png",
+    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740057/LOGO-RED-FINCA-RAIZ-BLANCO_nuv8k1.png",
   },
   {
     name: "Red Patners",
@@ -67,8 +81,8 @@ const services: Ref<Services[]> = ref([
       Con colaboración y una red global, empoderamos individuos y comunidades para alcanzar objetivos 
       financieros y de bienestar, creando un impacto positivo y duradero en la industria y la sociedad.
       `,
-    link: "http://redpartners.red-realestate.com/",
-    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redPatners_o39apm.svg",
+    link: "patners",
+    img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740190/redPatnersWhite_nimxml.png",
   },
   {
     name: "Red Money",
@@ -104,28 +118,45 @@ onMounted(() => {
 <style lang="css" scoped>
 .projectItem {
   position: relative;
-  overflow: hidden;
   display: flex;
-  /* background: rgb(0 0 0 / 50%); */
   justify-content: space-between;
-  border-radius: 10px;
-  gap: 20px;
-  /* width: 76%; */
-  height: 370px;
-  /* box-shadow: 0px 2px 4px #c3c3c3; */
-  /* background-color: aquamarine; */
+  height: 314px;
 }
 .projectItem:nth-child(2n) {
   flex-direction: row-reverse;
 }
 .artProjectItem {
+  @apply bg-primaryColor;
+  position: relative;
   width: 50%;
   padding: 20px;
   z-index: 2;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+.projectItem:nth-child(2n) .artProjectItem {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.pathShadow {
+  @apply bg-primaryColor opacity-10;
+  position: absolute;
+  width: 51%;
+  height: 105%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+.projectItem:nth-child(2n) .pathShadow {
+  width: 52%;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .artProjectItem img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50% - 237px);
+  width: 474px;
+  height: 320px;
   object-fit: contain;
 }
 .infoProjectItem {
@@ -134,15 +165,14 @@ onMounted(() => {
   flex-direction: column;
   gap: 10px;
   padding: 20px;
+  /* padding-inline: 40px; */
+  padding-right: 60px;
+  text-align: justify;
   z-index: 2;
 }
-/* .blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
+.projectItem:nth-child(2n) .infoProjectItem {
+  padding-left: 60px;
+}
 .btnVisit {
   @apply py-3 px-4 text-white font-semibold text-base shadow-lg bg-[#94120B] lg:self-start transition-all;
   @apply cursor-pointer z-[1] my-5 rounded-lg;
