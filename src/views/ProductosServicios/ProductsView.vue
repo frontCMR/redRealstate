@@ -144,8 +144,9 @@ onMounted(() => {
 .pathShadow {
   @apply bg-primaryColor opacity-10 transition-all;
   position: absolute;
-  width: 102%;
-  height: 44%;
+  display: none;
+  width: 100%;
+  height: 37%;
   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   background-image: radial-gradient(
@@ -155,15 +156,16 @@ onMounted(() => {
   );
 }
 .projectItem:nth-child(2n) .pathShadow {
-  width: 80%;
+  width: 100%;
+  height: 37%;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .artProjectItem img {
   position: absolute;
   top: calc(50% - 100px);
-  left: calc(50% - 150px);
-  width: 300px;
+  left: calc(50% - 128px);
+  width: 256px;
   height: 201px;
   object-fit: contain;
 }
@@ -190,11 +192,13 @@ onMounted(() => {
     height: 264px;
   }
   .pathShadow {
+    display: block;
     width: 51%;
-    height: 105%;
+    height: 104%;
   }
   .projectItem:nth-child(2n) .pathShadow {
-    width: 52%;
+    width: 51.5%;
+    height: 104%;
   }
 }
 </style>
