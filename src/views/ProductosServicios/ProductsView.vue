@@ -46,8 +46,8 @@ const services: Ref<Services[]> = ref([
   {
     name: "Red Academy",
     description: `
-      Hemos sido reconocidos como una de las compañías con los más altos estándares de formación y entrenamiento, 
-      nuestros modelos y sistemas, cursos virtuales, programas de coaching y productividad y eventos presenciales 
+      Hemos sido reconocidos como una de las compañías con los más altos estándares de formación y entrenamiento,
+      nuestros modelos y sistemas, cursos virtuales, programas de coaching y productividad y eventos presenciales
       están cambiando la vida de miles de emprendedores a nivel nacional e internacional
       `,
     link: "http://academy.red-realestate.com/",
@@ -56,7 +56,7 @@ const services: Ref<Services[]> = ref([
   {
     name: "CRM RED",
     description: `
-      CRM multiplataforma y multiusuarios para Inmobiliarias y agentes independientes. 
+      CRM multiplataforma y multiusuarios para Inmobiliarias y agentes independientes.
       Gestiona tus inmuebles, tus clientes, tu agenda.
       Automatiza campañas de marketing digital, obten tu
       página web y ten mayor visibilidad en el mercado.
@@ -67,10 +67,7 @@ const services: Ref<Services[]> = ref([
   {
     name: "Red Fincaraiz",
     description: `
-      Transformamos la experiencia global de bienes raíces con tecnología y marketing digital. 
-      Ofrecemos soluciones inteligentes y eficientes para encontrar, adquirir y gestionar propiedades 
-      de manera rentable. Con colaboración y una red global, empoderamos individuos y comunidades para 
-      alcanzar objetivos financieros y de bienestar, creando un impacto positivo y duradero en la industria y la sociedad.
+    Red Fincaraíz es una plataforma líder en el ámbito de bienes raíces que conecta de manera eficiente a compradores, vendedores, arrendatarios y arrendadores con una amplia variedad de opciones inmobiliarias. Con una interfaz moderna e intuitiva, Red Fincaraíz se ha convertido en el destino virtual por excelencia para aquellos que buscan adquirir, vender o alquilar propiedades en diversos lugares.
       `,
     link: "https://redfincaraiz.com/",
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740057/LOGO-RED-FINCA-RAIZ-BLANCO_nuv8k1.png",
@@ -78,10 +75,7 @@ const services: Ref<Services[]> = ref([
   {
     name: "Red Patners",
     description: `
-      Transformamos la experiencia global de bienes raíces con tecnología y marketing digital. 
-      Ofrecemos soluciones inteligentes y eficientes para encontrar, adquirir y gestionar propiedades de manera rentable. 
-      Con colaboración y una red global, empoderamos individuos y comunidades para alcanzar objetivos 
-      financieros y de bienestar, creando un impacto positivo y duradero en la industria y la sociedad.
+    Red Partners es un programa de vanguardia diseñado para impulsar a agentes inmobiliarios hacia el éxito empresarial. Nuestro enfoque se centra en brindar un soporte integral que transforma agentes en empresarios exitosos capaces de generar ingresos anuales superiores a 70,000 USD.
       `,
     link: "patners",
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740190/redPatnersWhite_nimxml.png",
@@ -89,8 +83,8 @@ const services: Ref<Services[]> = ref([
   {
     name: "Red Money",
     description: `
-      RED MONEY es una Criptomoneda que está creada para acercar a los usuarios al mundo de las inversiones en bienes raíces. 
-      Queremos democratizar el acceso a la industria inmobiliaria, que nuestros usuarios inviertan en la compra 
+      RED MONEY es una Criptomoneda que está creada para acercar a los usuarios al mundo de las inversiones en bienes raíces.
+      Queremos democratizar el acceso a la industria inmobiliaria, que nuestros usuarios inviertan en la compra
       y venta de propiedad raíz, que puedan generar rendimientos y hacer transacciones de una forma más segura, fácil y rápida.
       `,
     link: "https://myredmoney.com/",

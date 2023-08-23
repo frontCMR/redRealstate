@@ -51,7 +51,7 @@
         </li>
         <li>
           <a
-            href="https://www.red-realestate.com/customer"
+            href="https://www.red-realestate.com/backoffice/customer"
             target="_blank"
             class="hover-underline-animation"
             >Inicia sesión</a

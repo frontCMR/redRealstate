@@ -10,19 +10,19 @@
       />
     </video>
       <li class="itemS">
-        <h3 class="statisticsTitle">2034</h3>
+        <h3 class="statisticsTitle">2586</h3>
         <p class="statisticsP">Unidades vendidas</p>
       </li>
       <li class="itemS">
-        <h3 class="statisticsTitle">654.034MM</h3>
+        <h3 class="statisticsTitle">787.000MM</h3>
         <p class="statisticsP">Ventas Realizadas</p>
       </li>
       <li class="itemS">
-        <h3 class="statisticsTitle">10.284MM</h3>
+        <h3 class="statisticsTitle">14.542MM</h3>
         <p class="statisticsP">Comisiones generadas</p>
       </li>
       <li class="itemS">
-        <h3 class="statisticsTitle">220+</h3>
+        <h3 class="statisticsTitle">250+</h3>
         <p class="statisticsP">Agentes asociados</p>
       </li>
     </ul>
@@ -60,21 +60,21 @@ import { ref, Ref } from 'vue'
   }
   const ourInfo: Ref<OurInfo[]> = ref([
     {
-      title: 'Nuestra Historia',
+      title: 'Misión y Visión',
       imgUrl: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692069039/ofice_rgl5ju.png',
       to: '/nosotros'
     },
     {
-      title: 'Nuestro Equipo',
+      title: 'Equipo de Staff',
       imgUrl: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692069039/equipo_plroxk.png',
       to: 'https://kwred.co/equipo/'
     },
     {
-      title: 'Nuestros Eventos',
+      title: 'Eventos y Reconocimientos',
       imgUrl: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692069219/eventos_un7o5f.png',
       to: '/eventos'
     }
-  ]) 
+  ])
 
 </script>
 <style lang="css">

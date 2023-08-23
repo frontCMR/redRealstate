@@ -39,12 +39,12 @@ interface Services {
 const services: Ref<Services[]> = ref([
   {
     name: "Red Academy",
-    link: "http://academy.red-realestate.com/",
+    link: "https://kwred.co/Academy/",
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redAcademy_j2b9vy.svg",
   },
   {
     name: "CRM RED",
-    link: "http://www.crmred.co/inicio",
+    link: "https://crmred.co/inicio",
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redCrm_ynpl3f.svg",
   },
   {
@@ -54,7 +54,7 @@ const services: Ref<Services[]> = ref([
   },
   {
     name: "Red Patners",
-    link: "patners",
+    link: "https://res.cloudinary.com/reality-inmo/image/upload/v1692804335/PRESENTACIO%CC%81N_RED_PARTNERS_AGO_2023_doktp6.pdf",
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redPatners_o39apm.svg",
   },
   {
