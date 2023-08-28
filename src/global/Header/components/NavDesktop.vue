@@ -50,6 +50,12 @@
           >
         </li>
         <li>
+            <router-link
+            :to="{ name: 'giveaways' }"
+            class="hover-underline-animation"
+           > Giveaways</router-link>
+        </li>
+        <li>
           <a
             href="https://www.red-realestate.com/backoffice/customer"
             target="_blank"

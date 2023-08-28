@@ -23,6 +23,70 @@
             />
           </video>
         </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="w-64 h-[464px] rounded-md overflow-hidden">
+          <video class="w-full min-h-full min-w-full object-fill" controls>
+            <source
+              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
       </article>
     </section> -->
     </div>

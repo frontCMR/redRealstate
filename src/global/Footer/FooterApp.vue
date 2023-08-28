@@ -33,7 +33,7 @@
         <h3 class="footerTitle">Contacto</h3>
         <div>
           <h3>Telefono: 3333000</h3>
-          <h3>Celular: +57 324 4047878</h3>
+          <h3>Celular: +57 3186155244</h3>
           <p><span class="font-bold">Email:</span> contacto@red-realestate.com</p>
         </div>
         <div class="flex items-center gap-4">
@@ -74,11 +74,11 @@ const socialMedia: Ref<SocialMedia[]> = ref([
     icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconFacebook_yfw5ig.png",
   },
   {
-    link: "#",
+    link: "https://www.linkedin.com/company/red-realestate-digital",
     icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconLinkedIn_byu1tq.png",
   },
   {
-    link: `https://wa.me/+573244047878`,
+    link: `https://wa.me/+573186155244`,
     icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconWhatsapp_wgmbqo.png",
   },
   {

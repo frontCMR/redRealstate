@@ -61,17 +61,17 @@ import { ref, Ref } from 'vue'
   const ourInfo: Ref<OurInfo[]> = ref([
     {
       title: 'Misión y Visión',
-      imgUrl: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692069039/ofice_rgl5ju.png',
+      imgUrl: 'https://res.cloudinary.com/reality-inmo/image/upload/v1692992083/logos/WhatsApp_Image_2023-08-25_at_10.19.52_AM_yowz0e.jpg',
       to: '/nosotros'
     },
     {
       title: 'Equipo de Staff',
-      imgUrl: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692069039/equipo_plroxk.png',
+      imgUrl: 'https://res.cloudinary.com/reality-inmo/image/upload/v1692992082/logos/WhatsApp_Image_2023-08-25_at_10.20.13_AM_dxxgeb.jpg',
       to: 'https://kwred.co/equipo/'
     },
     {
       title: 'Eventos y Reconocimientos',
-      imgUrl: 'https://res.cloudinary.com/dumnq4c3n/image/upload/v1692069219/eventos_un7o5f.png',
+      imgUrl: 'https://res.cloudinary.com/reality-inmo/image/upload/v1692992082/logos/WhatsApp_Image_2023-08-25_at_10.20.26_AM_btnz7t.jpg',
       to: '/eventos'
     }
   ])

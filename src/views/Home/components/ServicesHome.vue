@@ -39,7 +39,7 @@ interface Services {
 const services: Ref<Services[]> = ref([
   {
     name: "Red Academy",
-    link: "https://kwred.co/Academy/",
+    link: "https://academy.red-realestate.com",
     img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redAcademy_j2b9vy.svg",
   },
   {

@@ -5,6 +5,8 @@ import ProductsView from "../views/ProductosServicios/ProductsView.vue";
 import EventsView from "../views/Eventos/EventsView.vue";
 import OportunityView from "../views/Oportunidad/OportunityView.vue";
 import PatnersView from "../views/Patners/PartnersView.vue";
+import GiveAways from "../views/GiveAways.vue";
+
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -36,6 +38,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/patners",
     name: "patners",
     component: PatnersView,
+  },
+  {
+    path: "/giveaways",
+    name: "giveaways",
+    component: GiveAways,
   },
 ];
 
