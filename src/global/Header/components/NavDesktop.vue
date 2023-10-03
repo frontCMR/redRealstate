@@ -4,7 +4,7 @@
       <router-link to="/">
         <img
           class="w-20 h-full object-contain"
-          src="https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redMain_a93d9u.svg"
+          src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1696346703/BANNERS/RED-REALESTATE/redMain_a93d9u_uifti1.svg"
           alt=""
         />
       </router-link>

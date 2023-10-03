@@ -50,7 +50,7 @@
         <figure class="mx-auto transition-all md:mx-0 self-start">
           <img
             class="mx-auto"
-            src="https://res.cloudinary.com/dumnq4c3n/image/upload/v1691858900/whiteLogo_qreaze.png"
+            src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1696349543/icons/red-relestate/blanco_1_jb77qc.png"
             alt="Logo"
           />
         </figure>
@@ -67,23 +67,23 @@ interface SocialMedia {
 const socialMedia: Ref<SocialMedia[]> = ref([
   {
     link: "https://www.instagram.com/red_realestatedigital/",
-    icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconInstagram_t9tm78.png",
+    icon: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696348396/icons/red-relestate/iconInstagram_t9tm78_jlsp5c.png",
   },
   {
     link: "https://www.facebook.com/red.realestate2023/",
-    icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconFacebook_yfw5ig.png",
+    icon: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696348505/icons/red-relestate/iconFacebook_yfw5ig_ltioss.png",
   },
   {
     link: "https://www.linkedin.com/company/red-realestate-digital",
-    icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconLinkedIn_byu1tq.png",
+    icon: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696348428/icons/red-relestate/iconLinkedIn_byu1tq_bsyoux.png",
   },
   {
     link: `https://wa.me/+573186155244`,
-    icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconWhatsapp_wgmbqo.png",
+    icon: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696348549/icons/red-relestate/iconWhatsapp_wgmbqo_cjfpra.png",
   },
   {
     link: "https://www.youtube.com/channel/UC0hJEfhcWzbtSJeeJjYHmMw",
-    icon: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692106316/iconYoutube_iuth71.png",
+    icon: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696348604/icons/red-relestate/iconYoutube_iuth71_bs7moo.png",
   },
 ]);
 </script>

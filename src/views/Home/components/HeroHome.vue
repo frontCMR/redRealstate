@@ -2,7 +2,7 @@
   <section class="relative h-80 mt-[61px] overflow-hidden lg:h-[100vh] transition-all">
     <video class="h-full min-h-full min-w-full object-fill" autoplay loop muted>
       <source
-        src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692050365/123265_iha3ep.mp4"
+        src="https://res.cloudinary.com/dv0z0qvha/video/upload/v1696351423/videos/123265_iha3ep_n0zq4v.mp4s"
         type="video/mp4"
       />
     </video>

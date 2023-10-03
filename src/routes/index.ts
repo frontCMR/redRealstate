@@ -6,6 +6,8 @@ import EventsView from "../views/Eventos/EventsView.vue";
 import OportunityView from "../views/Oportunidad/OportunityView.vue";
 import PatnersView from "../views/Patners/PartnersView.vue";
 import GiveAways from "../views/GiveAways.vue";
+import Freevacationsgiveaways from "../views/FreevacationsGiveaways.vue";
+
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -44,6 +46,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "giveaways",
     component: GiveAways,
   },
+  {
+    path: "/freevacationsgiveaways",
+    name: "freevacationsgiveaways",
+    component: Freevacationsgiveaways
+  }
 ];
 
 const router = createRouter({
