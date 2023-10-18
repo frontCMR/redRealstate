@@ -1,23 +1,18 @@
 <template>
-    <div class="pdf-container">
-        <h2 class="my-5 text-3xl font-semibold">Giveaways</h2>
-        <section class="px-4">
-            <article class="max-w-screen-xl mt-5 mb-10 mx-auto rounded-lg overflow-hidden">
-                <video class="w-full min-h-full min-w-full object-fill"
-                    src="https://res.cloudinary.com/dv0z0qvha/video/upload/v1696449625/videos/red-realestate/WhatsApp_Video_2023-10-04_at_2.56.29_PM_nzevst.mp4"
-                    controls>
-                    <source />
-                </video>
-            </article>
-        </section>
-        <!-- <iframe
-            src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1694181097/Destinos_Giveaway_qorfzx.pdf"
-            frameborder="0" class="presentation" allowfullscreen="true" mozallowfullscreen="true"
-            webkitallowfullscreen="true"></iframe> -->
-        <button class="center-button" @click="downoadPdf"><img class="img-icon"
-                src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1697635467/icons/red-relestate/download_ym9xfo.png"
-                alt="" sizes="10" srcset=""> Descargar pdf</button>
+    <div class="flex-container">
 
+        <h2 class="my-5 text-3xl font-semibold">Giveaways</h2>
+        <div id="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/6EwhN2GzNUQ?si=G5yUWi55X44yTjWS"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div id="download-button">
+            <h4><strong> Descarga Toda la Información, los Términos y Condiciones</strong></h4>
+            <button  @click="downoadPdf" class="btn"><i class="fa fa-download"></i> Descargar PDF</button>
+        </div>
+        <br>
     </div>
 </template>
 <script lang="ts" setup>
@@ -40,20 +35,62 @@ const downoadPdf = () => {
     display: -webkit-box;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+#video-container {
+    position: relative;
+}
+
+#video {
+    width: 90em;
+    height: 40rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #video {
+        width: 100%;
+        height: 10em;
+    }
+}
+
+#download-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .center-button {
+
     margin: auto;
     text-align: center;
-    width: 50%;
+    width: 30%;
+    border: 3px solid green;
     padding: 10px;
 }
 
-.img-icon {
-    text-align: center;
-    margin: auto;
-    padding: 10px;
+.width-video {
+    width: 100%;
+    height: 100%;
+}
 
-    width: 5%;
-    height: 5%;
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
 }
 
 .scrollbar::-webkit-scrollbar {
