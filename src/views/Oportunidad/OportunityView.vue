@@ -6,7 +6,7 @@
         alt=""
       /> -->
         <h2 class="my-5 text-3xl font-semibold">Oportunidad</h2>
-        <iframe src="https://res.cloudinary.com/reality-inmo/image/upload/v1694029526/Pres._RED_Agentes_Inmobiliarios_2.0_Internacional_ounvir.pdf"
+        <iframe src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1697635024/BANNERS/RED-REALESTATE/Pres._RED_Agentes_Inmobiliarios_2.0_COLOMBIA_alwfvm.pdf"
             frameborder="0" class="presentation" allowfullscreen="true" mozallowfullscreen="true"
             webkitallowfullscreen="true"></iframe>
         <button class="btnDownload" @click="downoadPdf">Descargar pdf</button>

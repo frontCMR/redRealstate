@@ -48,13 +48,13 @@ import { ref, Ref } from "vue";
   })
   const sendEmail = () => {
     const subject = "Correo desde la pagina Red RealEstate"
-    const body = `Nombre: ${emailData.value.name} \n 
-    Correo: ${emailData.value.email} \n 
-    Telefono: ${emailData.value.phone} \n 
-    Pais: ${emailData.value.country} \n 
+    const body = `Nombre: ${emailData.value.name} \n
+    Correo: ${emailData.value.email} \n
+    Telefono: ${emailData.value.phone} \n
+    Pais: ${emailData.value.country} \n
     Mensaje: ${emailData.value.message}`
     // const mailtoLink = `mailto:cesar.giraldo@red-realestate.com?subject=${subject}&body=${body}`;
-    const mailtoLink = `mailto:bhc1223@hotmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:contacto@red-realestate.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink
   }
 </script>

@@ -6,7 +6,7 @@
         <section class="px-4">
             <article class="max-w-screen-xl mt-5 mb-10 mx-auto rounded-lg overflow-hidden">
                 <video class="w-full min-h-full min-w-full object-fill"
-                    src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692735841/videoCompress_kfqwtq.mp4" controls>
+                    src="https://res.cloudinary.com/dv0z0qvha/video/upload/v1696449625/videos/red-realestate/WhatsApp_Video_2023-10-04_at_2.56.29_PM_nzevst.mp4" controls>
                     <source />
                 </video>
             </article>
@@ -46,7 +46,8 @@ const services: Ref<Services[]> = ref([
       están cambiando la vida de miles de emprendedores a nivel nacional e internacional
       `,
         link: "https://academy.red-realestate.com",
-        img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740058/RED_ACADEMY_LOGO_1_copia_sa6x8u.png",
+        img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696429341/icons/red-relestate/2_ivnndl.png",
+
     },
     {
         name: "CRM RED",
@@ -57,7 +58,8 @@ const services: Ref<Services[]> = ref([
       página web y ten mayor visibilidad en el mercado.
       `,
         link: "http://www.crmred.co/inicio",
-        img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740057/CRM_BLANCO_copia_ucy19d.png",
+
+        img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696428595/icons/red-relestate/CRM_BLANCO_copia_yabuiy.png",
     },
     {
         name: "Red Fincaraiz",
@@ -65,7 +67,7 @@ const services: Ref<Services[]> = ref([
     Red Fincaraíz es una plataforma líder en el ámbito de bienes raíces que conecta de manera eficiente a compradores, vendedores, arrendatarios y arrendadores con una amplia variedad de opciones inmobiliarias. Con una interfaz moderna e intuitiva, Red Fincaraíz se ha convertido en el destino virtual por excelencia para aquellos que buscan adquirir, vender o alquilar propiedades en diversos lugares.
       `,
         link: "https://redfincaraiz.com/",
-        img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740057/LOGO-RED-FINCA-RAIZ-BLANCO_nuv8k1.png",
+        img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696428595/icons/red-relestate/FINCA_RAIZ_BLANCO_o7pntk.png",
     },
     {
         name: "Red Patners",
@@ -73,7 +75,7 @@ const services: Ref<Services[]> = ref([
     Red Partners es un programa de vanguardia diseñado para impulsar a agentes inmobiliarios hacia el éxito empresarial. Nuestro enfoque se centra en brindar un soporte integral que transforma agentes en empresarios exitosos capaces de generar ingresos anuales superiores a 70,000 USD.
       `,
         link: "patners",
-        img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692740190/redPatnersWhite_nimxml.png",
+        img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696428595/icons/red-relestate/PARTNERS_BLANCO_g1k083.png",
     },
     {
         name: "Red Money",
@@ -83,7 +85,7 @@ const services: Ref<Services[]> = ref([
       y venta de propiedad raíz, que puedan generar rendimientos y hacer transacciones de una forma más segura, fácil y rápida.
       `,
         link: "https://myredmoney.com/",
-        img: "https://res.cloudinary.com/dumnq4c3n/image/upload/v1692227141/banner-2-2_jz3lda.png",
+        img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696432934/icons/red-relestate/RED_MONEY_EN_BLANCO_fvwun9.svg",
     },
     {
         name: "RED TRAVEL & LIFESTYLE",
@@ -91,7 +93,7 @@ const services: Ref<Services[]> = ref([
         Imagina tener a tu alcance una puerta abierta a un universo de destinos esperando a ser explorados. En RED TRAVEL & LIFESTYLE, no solo te ofrecemos tarifas exclusivas y descuentos impresionantes en una amplia gama de opciones de viaje, sino que también te invitamos a descubrir una nueva forma de aventurarte, donde cada paso se convierte en una oportunidad para ser recompensado.
       `,
         link: "/giveaways",
-        img: "https://res.cloudinary.com/reality-inmo/image/upload/v1692887195/logos/RED_TRAVEL_LIFESTYLE_EN_BLANCO_oqrgva.png",
+        img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696428595/icons/red-relestate/TRAVEL_BLANCO_hy5byj.png",
     },
     // {
     //   name: "Red Projects",
@@ -122,7 +124,7 @@ onMounted(() => {
 
 .projectItem:nth-child(2n) {
     @apply lg:flex-row-reverse
-        /* flex-direction: row-reverse; */
+    /* flex-direction: row-reverse; */
     ;
 }
 
