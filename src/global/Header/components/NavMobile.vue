@@ -6,7 +6,7 @@
     <router-link to="/">
       <img
         class="w-20 h-full object-contain"
-        src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1696346703/BANNERS/RED-REALESTATE/redMain_a93d9u_uifti1.svg"
+        :src="redf"
         alt=""
       />
     </router-link>
@@ -85,6 +85,8 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import { Bars3Icon } from "@heroicons/vue/24/solid";
+import redf from "@/assets/redFincaRaiz.svg";
+const img = ref(redf);
 const isNavMobile = ref(false);
 const toggleMenuMobile = (e: MouseEvent): void => {
   const element = e.target as HTMLElement;
