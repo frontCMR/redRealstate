@@ -50,7 +50,7 @@
         <figure class="mx-auto transition-all md:mx-0 self-start">
           <img
             class="mx-auto"
-            src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1696349543/icons/red-relestate/blanco_1_jb77qc.png"
+            :src="imagenLogo"
             alt="Logo"
           />
         </figure>
@@ -60,6 +60,7 @@
 </template>
 <script setup lang="ts">
 import { ref, Ref } from "vue";
+import imagenLogo from "@/assets/RED_BLANCO.png"
 interface SocialMedia {
   link: string;
   icon: string;

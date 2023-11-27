@@ -4,7 +4,7 @@
       <router-link to="/">
         <img
           class="w-20 h-full object-contain"
-          src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1696346703/BANNERS/RED-REALESTATE/redMain_a93d9u_uifti1.svg"
+          :src="imagenLogo"
           alt=""
         />
       </router-link>
@@ -68,6 +68,8 @@
   </section>
 </template>
 <script lang="ts" setup>
+import imagenLogo from "@/assets/redMain_a93d9u.svg";
+
 // const downoadPdf = () => {
 //   const link = document.createElement("a");
 //   link.href = '../../public/oportunidad.pdf';

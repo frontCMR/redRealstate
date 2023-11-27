@@ -30,6 +30,14 @@
 </template>
 <script lang="ts" setup>
 import { ref, Ref } from "vue";
+
+import imagen3Src from "@/assets/LOGO-RED-FINCA-RAIZ.png";
+import imagenTravel from "@/assets/RED_TRAVEL_LIFESTYLE.png";
+import imagenParner from "@/assets/LOGO-A-COLOR.png";
+import imagenRedMoney from "@/assets/RED-MONEY.png";
+import imagenCrm from "@/assets/LOGO_FINAL_CRM.png";
+import imagenAcademy from "@/assets/RED_ACADEMY_LOGO_1.png";
+import imagenRedP from "@/assets/LOGO-RED-PROJECTS.png"
 interface Services {
   name: string;
   img: string;
@@ -40,37 +48,37 @@ const services: Ref<Services[]> = ref([
   {
     name: "Red Academy",
     link: "https://academy.red-realestate.com",
-    img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696346968/BANNERS/RED-REALESTATE/redAcademy_j2b9vy_b61qo1.svg",
+    img: imagenAcademy,
   },
   {
     name: "CRM RED",
     link: "https://crmred.co/inicio",
-    img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696347151/BANNERS/RED-REALESTATE/redCrm_ynpl3f_it013w.svg",
+    img: imagenCrm,
   },
   {
     name: "Red Fincaraiz",
     link: "https://redfincaraiz.com/",
-    img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696347261/BANNERS/RED-REALESTATE/LOGO-RED-FINCA-RAIZ_1_jnr9sx_rh7nos.png",
+    img: imagen3Src,
   },
   {
     name: "Red Patners",
     link: "https://res.cloudinary.com/reality-inmo/image/upload/v1692804335/PRESENTACIO%CC%81N_RED_PARTNERS_AGO_2023_doktp6.pdf",
-    img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696347381/BANNERS/RED-REALESTATE/redPatners_o39apm_xgelqo.svg",
+    img: imagenParner
   },
   {
     name: "Red Money",
     link: "https://myredmoney.com/",
-    img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696347771/BANNERS/RED-REALESTATE/RED-MONEY_zk9gdz.png",
+    img: imagenRedMoney,
   },
   {
     name: "Red Projects",
     link: "#",
-    img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696347770/BANNERS/RED-REALESTATE/LOGO-RED-PROJECTS_rwgt8p.png",
+    img: imagenRedP,
   },
   {
     name: "Red Travel",
     link: "/giveaways",
-    img: "https://res.cloudinary.com/dv0z0qvha/image/upload/v1696347770/BANNERS/RED-REALESTATE/RED_TRAVEL_LIFESTYLE_1_zy5vbk.png",
+    img: imagenTravel,
   },
 ]);
 </script>
