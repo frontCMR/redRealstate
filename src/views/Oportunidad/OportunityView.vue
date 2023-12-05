@@ -1,94 +1,13 @@
 <template>
-    <div class="pdf-container">
-        <!-- <img
-        class="w-48"
-        src="https://res.cloudinary.com/dumnq4c3n/image/upload/v1691793300/redMain_a93d9u.svg"
-        alt=""
-      /> -->
-        <h2 class="my-5 text-3xl font-semibold">Oportunidad</h2>
-        <iframe src="https://res.cloudinary.com/dv0z0qvha/image/upload/v1697635024/BANNERS/RED-REALESTATE/Pres._RED_Agentes_Inmobiliarios_2.0_COLOMBIA_alwfvm.pdf"
-            frameborder="0" class="presentation" allowfullscreen="true" mozallowfullscreen="true"
-            webkitallowfullscreen="true"></iframe>
-        <button class="btnDownload" @click="downoadPdf">Descargar pdf</button>
-        <!-- <section class="my-5">
-      <h3 class="my-3 text-2xl font-semibold">Mas información</h3>
-      <article
-        class="videoSlider scrollbar items-center gap-9 my-5 py-3 rounded-md overflow-hidden overflow-x-auto"
-      >
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
+    <div class="flex-container">
+
+        <h2 class="my-5 text-3xl font-semibold"> Nuestros servicios</h2>
+        <div id="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/ohBt2aCFJgM?si=4VS_dIjqGUs20yE1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div class="w-64 h-[464px] rounded-md overflow-hidden">
-          <video class="w-full min-h-full min-w-full object-fill" controls>
-            <source
-              src="https://res.cloudinary.com/dumnq4c3n/video/upload/v1692133083/VIDEO-LANZAMIENTO-SISTEMA_DE_NEGOCIO_vqfwuu.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-      </article>
-    </section> -->
     </div>
 </template>
 <script lang="ts" setup>
@@ -96,19 +15,44 @@ import { onMounted } from "vue";
 onMounted(() => {
     window.scrollTo(0, 0);
 });
-const downoadPdf = () => {
-    const link = document.createElement("a");
-    link.href = "../../public/oportunidad.pdf";
-    link.target = "_blank";
-    link.download = "Oportunidad.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-};
+// const downoadPdf = () => {
+//     const link = document.createElement("a");
+//     link.href = "../../public/oportunidad.pdf";
+//     link.target = "_blank";
+//     link.download = "Oportunidad.pdf";
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// };
 </script>
 <style lang="css" scoped>
 .videoSlider {
     display: -webkit-box;
+}
+
+#video {
+    width: 90em;
+    height: 40rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #video {
+        width: 100%;
+        height: 10em;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+#video-container {
+    position: relative;
 }
 
 .scrollbar::-webkit-scrollbar {

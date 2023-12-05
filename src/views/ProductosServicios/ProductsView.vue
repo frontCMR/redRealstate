@@ -3,14 +3,14 @@
         <h2 class="px-4 text-3xl font-semibold my-6 max-w-screen-xl mx-auto">
             Nuestros servicios
         </h2>
-        <section class="px-4">
+        <!-- <section class="px-4">
             <article class="max-w-screen-xl mt-5 mb-10 mx-auto rounded-lg overflow-hidden">
                 <video class="w-full min-h-full min-w-full object-fill"
                     src="https://res.cloudinary.com/dv0z0qvha/video/upload/v1696449625/videos/red-realestate/WhatsApp_Video_2023-10-04_at_2.56.29_PM_nzevst.mp4" controls>
                     <source />
                 </video>
             </article>
-        </section>
+        </section> -->
         <section class="flex flex-col items-center justify-center gap-10 mx-auto">
             <article v-for="service in services" class="projectItem">
                 <div class="pathShadow"></div>

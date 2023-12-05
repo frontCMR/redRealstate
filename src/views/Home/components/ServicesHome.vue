@@ -32,12 +32,12 @@
 import { ref, Ref } from "vue";
 
 import imagen3Src from "@/assets/LOGO-RED-FINCA-RAIZ.png";
-import imagenTravel from "@/assets/RED_TRAVEL_LIFESTYLE.png";
+// import imagenTravel from "@/assets/RED_TRAVEL_LIFESTYLE.png";
 import imagenParner from "@/assets/LOGO-A-COLOR.png";
-import imagenRedMoney from "@/assets/RED-MONEY.png";
+// import imagenRedMoney from "@/assets/RED-MONEY.png";
 import imagenCrm from "@/assets/LOGO_FINAL_CRM.png";
 import imagenAcademy from "@/assets/RED_ACADEMY_LOGO_1.png";
-import imagenRedP from "@/assets/LOGO-RED-PROJECTS.png"
+// import imagenRedP from "@/assets/LOGO-RED-PROJECTS.png"
 interface Services {
   name: string;
   img: string;
@@ -65,21 +65,21 @@ const services: Ref<Services[]> = ref([
     link: "https://res.cloudinary.com/reality-inmo/image/upload/v1692804335/PRESENTACIO%CC%81N_RED_PARTNERS_AGO_2023_doktp6.pdf",
     img: imagenParner
   },
-  {
-    name: "Red Money",
-    link: "https://myredmoney.com/",
-    img: imagenRedMoney,
-  },
-  {
-    name: "Red Projects",
-    link: "#",
-    img: imagenRedP,
-  },
-  {
-    name: "Red Travel",
-    link: "/giveaways",
-    img: imagenTravel,
-  },
+//   {
+//     name: "Red Money",
+//     link: "https://myredmoney.com/",
+//     img: imagenRedMoney,
+//   },
+//   {
+//     name: "Red Projects",
+//     link: "#",
+//     img: imagenRedP,
+//   },
+//   {
+//     name: "Red Travel",
+//     link: "/giveaways",
+//     img: imagenTravel,
+//   },
 ]);
 </script>
 <style lang="css" scoped>
