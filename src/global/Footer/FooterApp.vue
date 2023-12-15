@@ -33,7 +33,7 @@
         <h3 class="footerTitle">Contacto</h3>
         <div>
           <h3>Telefono: 3333000</h3>
-          <h3>Celular: +57 3186155244</h3>
+          <h3>Celular: +57 3183472853</h3>
           <p><span class="font-bold">Email:</span> contacto@red-realestate.com</p>
         </div>
         <div class="flex items-center gap-4">
